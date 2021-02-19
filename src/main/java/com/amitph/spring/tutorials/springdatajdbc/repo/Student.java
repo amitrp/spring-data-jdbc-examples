@@ -1,11 +1,11 @@
 package com.amitph.spring.tutorials.springdatajdbc.repo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
 
 @Data
-@Table("student")
+@AllArgsConstructor
 public class Student {
     @Id
     private Long studentId;
